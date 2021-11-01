@@ -1,0 +1,390 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("assets/fonts/Lato.ttf") format("truetype");
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: "lato", sans-serif;
+    font-size: 14px;
+    margin: 0px;
+  }
+
+  body > * {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 0px;
+  }
+  body > p {
+    max-width: 70ch;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Montserrat", sans-serif;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  header {
+    height: 65vh;
+    background-image: url("assets/img/studentsbg.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  header div {
+    background-color: #c5192d;
+    text-align: center;
+    color: white;
+    margin: 7rem 0.6rem 4rem 0.6rem;
+    padding: 15px;
+  }
+
+  main {
+    box-shadow: 0 0 1px 0 darkgray;
+    background-color: whitesmoke;
+    margin: 4%;
+  }
+  #intro-container {
+    background-color: #c5192d;
+    margin: 6rem 0px 4rem 0px;
+    padding: 5%;
+    font-size: 1.2rem;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #intro-container li:nth-child(1)::before {
+    content: "\1F64C";
+    width: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #intro-container li:nth-child(2)::before {
+    content: "\1F3EB";
+    width: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #intro-container li:nth-child(3)::before {
+    content: "\1F4DA";
+    width: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  article {
+    margin: 2rem;
+  }
+
+  article > img {
+    max-width: 100%;
+  }
+
+  footer {
+    background-color: #c5192d;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+
+  a {
+    color: white;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+  body {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-size: 16px;
+    margin: 0;
+    font-family: "lato", sans-serif;
+  }
+  body > p {
+    max-width: 70ch;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Montserrat", sans-serif;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+    margin: 0;
+  }
+
+  header {
+    background-image: url("assets/img/studentsbg.png");
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  header > * {
+    background-color: #c5192d;
+    text-align: center;
+    color: white;
+    margin-top: 45%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2rem;
+  }
+
+  main {
+    box-shadow: 0 0 1px 0 darkgray;
+    background-color: whitesmoke;
+    margin: 5%;
+  }
+  main > article {
+    height: 35vh;
+    border-bottom: solid 1px darkgray;
+  }
+
+  main > article {
+    height: 45vh;
+  }
+
+  #intro-container {
+    margin: 6rem 0px 4rem 0px;
+    display: flex;
+    background-color: 50% #c5192d, 50% white;
+  }
+  #intro-container > div:first-child {
+    background-color: #c5192d;
+    padding: 2rem;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 2rem;
+    font-size: 16px;
+    display: inline-block;
+  }
+  #intro-container li:nth-child(1)::before {
+    content: "\1F64C";
+    width: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #intro-container li:nth-child(2)::before {
+    content: "\1F3EB";
+    width: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #intro-container li:nth-child(3)::before {
+    content: "\1F4DA";
+    width: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  article {
+    margin: 2rem 2rem 0rem 2rem;
+  }
+
+  article > img:nth-child(2) {
+    margin-left: 2.5rem;
+    margin-right: 0px;
+    position: right top;
+  }
+  article > :last-child {
+    border-bottom: none;
+  }
+
+  article > img:nth-child(4) {
+    margin-left: 2.5rem;
+    margin-right: 0px;
+  }
+  article > img {
+    max-width: 100%;
+    height: 250px;
+    margin-right: 2.5rem;
+  }
+  article:nth-child(2) {
+    display: inline-flex;
+  }
+  article:nth-child(3) {
+    display: inline-flex;
+  }
+  article:nth-child(4) {
+    display: inline-flex;
+  }
+  footer {
+    background-color: #c5192d;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  a {
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  body {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-size: 1.2rem;
+    margin: 0;
+    font-family: "lato", sans-serif;
+  }
+  body > p {
+    max-width: 70ch;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Montserrat", sans-serif;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+    margin: 0;
+  }
+
+  header {
+    background-image: url("assets/img/studentsbg.png");
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+  header > * {
+    background-color: #c5192d;
+    text-align: center;
+    color: white;
+    margin: 25% 20% 4rem 20%;
+    padding: 2rem;
+  }
+
+  main {
+    box-shadow: 0 0 1px 0 darkgray;
+    background-color: whitesmoke;
+    margin: 20%;
+    margin-bottom: 2rem;
+  }
+  main > article {
+    border-bottom: solid 1px darkgray;
+  }
+
+  #intro-container {
+    margin: 6rem 0px 4rem 0px;
+    display: flex;
+    background-color: 50% #c5192d, 50% white;
+  }
+  #intro-container > div:first-child {
+    background-color: #c5192d;
+    padding: 2rem;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+  #intro-container li:nth-child(1)::before {
+    content: "\1F64C";
+    width: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #intro-container li:nth-child(2)::before {
+    content: "\1F3EB";
+    width: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #intro-container li:nth-child(3)::before {
+    content: "\1F4DA";
+    width: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  article {
+    margin: 2rem 2rem 0rem 2rem;
+  }
+  article > img:nth-child(2) {
+    margin-left: 5rem;
+    margin-right: 0px;
+    position: right top;
+  }
+  article > :last-child {
+    border-bottom: none;
+  }
+
+  article > img:nth-child(4) {
+    margin-left: 5rem;
+    margin-right: 0px;
+  }
+
+  article > img {
+    max-width: 100%;
+    height: 250px;
+    margin-right: 5rem;
+  }
+
+  article:nth-child(2) {
+    display: inline-flex;
+  }
+  article:nth-child(3) {
+    display: inline-flex;
+  }
+  article:nth-child(4) {
+    display: inline-flex;
+  }
+  footer {
+    background-color: #c5192d;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  a {
+    color: white;
+  }
+}
